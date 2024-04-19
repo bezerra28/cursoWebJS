@@ -7,11 +7,8 @@ function tocaSom(idElementoAudio){
 //cria aqui uma lista de teclas se referenciando a elas que esta no index.html na classe tecla
 const listaDeTeclas = document.querySelectorAll('.tecla');
 
-//contador do loop
-let contador = 0;
-
 //loop
-while (contador < listaDeTeclas.length){
+for (let contador = 0; contador < listaDeTeclas.length; contador++){
 
         //pego a tecla clicada usando o contado do loop
         const tecla = listaDeTeclas[contador];
@@ -24,8 +21,6 @@ while (contador < listaDeTeclas.length){
         tecla.onclick = function () {
             tocaSom(idAudio);
         }
-    
-        contador = contador + 1;
 
         console.log(contador);
     }
