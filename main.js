@@ -1,12 +1,22 @@
+//função que exibe o som
 function tocaSomPom(){
     document.querySelector('#som_tecla_pom').play();
 
 }
-function tocaSomClap(){
-    document.querySelector('#som_tecla_clap').play();
-}
 
+//cria aqui uma lista de teclas se referenciando a elas que esta no index.html
 const listaDeTeclas = document.querySelectorAll('.tecla');
 
-listaDeTeclas[0].onclick = tocaSomPom;
-listaDeTeclas[1].onclick = tocaSomClap;
+//contador do loop
+let contador = 0;
+
+//loop
+while (contador < listaDeTeclas.length){
+
+    listaDeTeclas[contador].onclick = function(){
+
+    }
+    contador = contador + 1;
+
+    console.log(contador);
+}
