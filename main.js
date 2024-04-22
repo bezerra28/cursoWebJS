@@ -10,3 +10,5 @@ const listaDeTeclas = document.querySelectorAll('.tecla');
 
 listaDeTeclas[0].onclick = tocaSomPom;
 listaDeTeclas[1].onclick = tocaSomClap;
+
+console.log("alterando");
